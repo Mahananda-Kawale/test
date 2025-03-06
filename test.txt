@@ -16,5 +16,9 @@ Error: Cannot find module '/usr/src/app/app.js'
 • Use node-js-sample image from Docker Hub.
 • Configure 2 replicas for the application.
 • Define a NodePort service to expose the application on port 30007.
+
+• Mount the PVC (node-js-pvc) to a directory inside the container (/usr/src/app/data).
+• Ensure the volume and volume mount sections are added to the container configuration.
+5. Apply the updated deployment to the application to reflect the changes.
 4. Apply the deployment to Kubernetes:
 kubectl apply -f k8s/deployment.yaml 
