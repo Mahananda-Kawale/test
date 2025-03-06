@@ -9,3 +9,12 @@ Error: Cannot find module '/usr/src/app/app.js'
     at internal/main/run_main_module.js:17:47 {
   code: 'MODULE_NOT_FOUND',
   requireStack: []
+
+
+
+. Create a "deployment.yaml" file with the following specifications:
+• Use node-js-sample image from Docker Hub.
+• Configure 2 replicas for the application.
+• Define a NodePort service to expose the application on port 30007.
+4. Apply the deployment to Kubernetes:
+kubectl apply -f k8s/deployment.yaml 
