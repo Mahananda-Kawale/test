@@ -1,0 +1,5 @@
+<proxy>
+  <name>proxy.example.com</name>
+  <port>8080</port>
+  <noProxyHost>localhost|127.0.0.1</noProxyHost>
+</proxy>
